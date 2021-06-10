@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'node:14-alpine' } }
+    agent { docker { image 'python:3.5.1' } }
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
+                sh 'python -m robot --report NONE --outputdir output --logtitle "Task log" tasks.robot'
             }
         }
     }
