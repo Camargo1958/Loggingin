@@ -1,5 +1,5 @@
 pipeline {
-    agent{ node {label 'DESKTOP-S18QVGK'}}
+    agent{ node {label 'WindowsAgent1'}}
     stages {
         stage('build') {
             steps {
