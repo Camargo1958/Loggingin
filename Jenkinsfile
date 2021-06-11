@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent{ node {label 'DESKTOP-S18QVGK'}}
     stages {
         stage('build') {
             steps {
