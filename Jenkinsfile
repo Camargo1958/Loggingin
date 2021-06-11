@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                shell 'python -m robot --report NONE --outputdir output --logtitle "Task log" tasks.robot'
+                sh 'python -m robot --report NONE --outputdir output --logtitle "Task log" tasks.robot'
             }
         }
     }
